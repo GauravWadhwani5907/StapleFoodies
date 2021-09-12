@@ -1,0 +1,409 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    
+} 
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    margin: 3px 6px;
+    height: 77px;
+}
+/* Navigation Bar: List Styling */
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+    list-style: none;
+    font-family: 'Bree Serif', serif;
+}
+
+
+#navbar ul li{
+    display: flex;
+    list-style: none;
+    font-size: 1.3rem;
+    
+}
+#navbar ul li a{
+    display: block; 
+    padding: 3px 32px;
+    border-radius: 20px;
+     color: white; 
+     text-shadow:2px 2px black;
+    text-decoration: none;
+    font-weight: 900;
+    
+    
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    text-shadow: none;
+}
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    align-items: center;
+    justify-content: center;
+    height: 534px;
+    margin-bottom: 241px ;
+}
+
+#home::before{
+    content:"";
+    background: url("bg.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    
+}
+#home h1{
+    color: black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    text-shadow: 4px 4px white;
+    padding-top: 122px;
+    
+
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    font-family: 'Bree Serif', serif;
+    text-shadow: 4px 0.5px white;
+}
+
+ /* Services Section */
+ #services-section{
+     height: 853px;
+     width: 100%;
+    margin-top: -135px;
+    display: flex;
+    display: inline-block;
+ }
+ #services{
+    margin: 34px;
+    display: flex; 
+}
+ 
+#services-section::before{
+    content: "";
+    position: absolute;
+    background: yellow;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+#services .box iframe{
+    border-radius: 20px;
+    margin: 10px 6px;
+   
+        height: 300px;
+    
+}
+#services .box {
+    height: 100%;
+    
+}
+#services-section h1{
+    font-size: 2.5rem;
+    padding: 12px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+/*About Section */
+#about-section{ 
+            height: 860px;
+            position: relative;
+            margin-top: -100px;
+}
+#about-section::before{
+    content: "";
+    position: absolute;
+    background: url(tanu.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 90%;
+    z-index: -1;
+    opacity: 0.5;
+    
+    
+}
+.about-item{
+        padding: 16px;
+}
+
+#about{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    
+}
+#about-section h1{
+    font-size: 2.8rem;
+   
+}
+#about img{
+    height: 175px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin: auto;
+    
+}
+.about-p{
+    font-family: 'Bree Serif', serif;
+    font-size: 25px;
+    padding: 0px 260px;
+    text-align: center;
+    padding-top: 26px;
+}
+#sm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#sm ul{
+    display: flex;
+    list-style: none;
+    
+}
+ #sm ul li img{
+     height: 35px;
+     display: flex;
+     justify-content: center;
+     align-items: center;    
+     margin: auto;
+padding: 25px 50px;
+      
+ }
+ #sm ul li img:hover{
+     transform: scale(1.2);
+ }
+
+ /* Contact Secction */
+#contact{
+    
+    position: relative;
+   color: white;
+   margin-top: -86px;
+}
+#contact h1{
+    
+    padding: 10px;
+}
+#contact::before{
+    position: absolute;
+   content: "";
+   background-color: black; 
+   height: 100%;
+    width: 100%;
+    color: white;
+   z-index: -1;
+   opacity: 0.7;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+ #contact-box input, 
+ #contact-box textarea{
+     width: 100%;
+     padding: 0.5rem;
+     border-radius: 10px;
+     font-size: 1.1rem;
+     margin: 5px 0px;
+    }
+ #contact-box form{
+     width: 40%;
+ }
+ #contact-box label{
+     font-size: 1.3rem;
+     font-family: 'Bree Serif', serif;
+     
+ }
+ .submit{
+     padding: 6px 20px;
+     font-family: 'Bree Serif', serif;
+     border-radius: 10px ;
+    font-size: 1.1rem;
+    border: 2px solid white;    
+    margin:10px 255px;
+    
+}
+    .submit:hover{
+        color: white;
+        background-color:gray;
+        transform: scale(1.1);
+      
+
+    }
+footer{
+    color: white;
+    background-color: black;
+    padding: 20px 30px;
+
+}
+/* Utility Class */
+.h-primary{
+    font-size: 3.5rem;
+    padding: 12px;
+    height: 226.8;
+    padding-top: 200px;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+
+
+.btn{
+    padding:6px 20px;
+    border: 2px solid white;
+    background-color: burlywood;
+    margin: 17px;
+     border-radius: 10px;
+    cursor: pointer;   
+    
+ }
+ .btn a{
+     text-decoration: none;
+     color: black;
+    font-weight: bolder;
+    font-family: 'Bree Serif', serif;
+    font-size: 1.2rem;
+ }
+ .btn:hover{
+     transform: scale(1.2);
+ }
+.center{
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+
+}
+/* short.html file for short reciepes */
+.short{
+    font-family: 'Bree Serif', serif;
+    height: 700px;
+    display: flex;
+    display: inline-block;
+}
+.short::before{
+    content: "";
+    position: absolute;
+    background:url(short-image.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    
+}
+
+ .short h1{
+    color: yellow;
+    text-align: center;
+    text-shadow: 4px 2px black;
+   margin-left: 200px;
+    font-size: 60px;
+    padding-bottom: 15px;
+}
+.short iframe{
+    width: 225px;
+    height: 289px;
+    border: white solid 2px;
+    border-radius: 20px;
+    
+    
+}
+.short p{
+    padding: 12px 12px;
+    margin-top: -294px;
+    margin-left: 223px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    text-shadow: black 4px 2px ;
+}
+#dabba{
+    margin-left: 173px;
+}
+#frame-1{
+        width: 500px;
+    height: 290px;
+    margin-left:12px;
+
+}
+#frame-2{
+   
+    width: 500px;
+    height: 290px;
+    margin:12px;
+}
+#frame-3{
+   
+    width: 500px;
+    height: 290px;
+    margin-top: -604px;
+    margin-left: 625px;
+}
+#frame-4{
+   
+    width: 500px;
+    height: 290px;
+    margin-left: 625px;
+    margin-top: 12px;
+}
+.footer {
+        text-align: center;
+       font-family: 'Bree Serif', serif;
+
+    }
+   
+}
+
+
